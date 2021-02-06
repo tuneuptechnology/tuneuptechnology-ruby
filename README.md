@@ -2,8 +2,8 @@
 
 The Ruby client library for the Tuneup Technology App.
 
-[![Build Status](https://travis-ci.com/ncr4/tuneuptechnology-ruby.svg?branch=master)](https://travis-ci.com/ncr4/tuneuptechnology-ruby)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-ruby/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-ruby/actions)
+[![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-ruby)](LICENSE)
 
 This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer.create` and pass some data and let the library do the rest.
 
@@ -19,7 +19,7 @@ gem install tuneuptechnology
 require 'tuneuptechnology'
 
 data = {
-    'auth' => ENV['AUTH'],
+    'auth' => ENV['API_EMAIL'],
     'api_key' => ENV['API_KEY'],
     'firstname' => 'Jake',
     'lastname' => 'Peralta',

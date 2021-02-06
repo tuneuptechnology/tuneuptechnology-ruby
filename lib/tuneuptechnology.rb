@@ -12,12 +12,12 @@ require 'tuneuptechnology/ticket'
 module TuneupTechnology
   # Build the HTTP client for the library
   class Client
-    @base_url = 'https://app.tuneuptechnology.com/api/'
+    @base_url = 'https://app.tuneuptechnology.com/api'
     class << self
       attr_reader :base_url
     end
 
-    @version = '1.0.0'
+    @version = '1.1.0'
     class << self
       attr_reader :version
     end

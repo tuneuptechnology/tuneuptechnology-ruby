@@ -3,7 +3,7 @@
 require 'tuneuptechnology'
 
 data = {
-  'auth' => ENV['AUTH'],
+  'auth' => ENV['API_EMAIL'],
   'api_key' => ENV['API_KEY'],
   'firstname' => 'Jake',
   'lastname' => 'Peralta',
