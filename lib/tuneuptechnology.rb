@@ -17,7 +17,7 @@ module TuneupTechnology
       attr_reader :base_url
     end
 
-    @version = '1.1.0'
+    @version = '1.2.0'
     class << self
       attr_reader :version
     end
@@ -30,8 +30,8 @@ module TuneupTechnology
       attr_reader :headers
     end
 
-    def self.post(data, endpoint)
-      response = RestClient.post(endpoint, data.to_json, headers)
+    def self.make_http_request(data, endpoint)
+      response = RestClient.post(endpoint, data.to_json, headers, timeout: 10)
       JSON.pretty_generate(JSON.parse(response))
     end
   end

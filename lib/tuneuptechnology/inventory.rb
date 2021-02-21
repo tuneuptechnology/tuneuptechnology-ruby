@@ -6,31 +6,31 @@ module TuneupTechnology
     # Create an inventory item
     def self.create(data)
       endpoint = "#{Client.base_url}/inventory/create"
-      Client.post(data, endpoint)
+      Client.make_http_request(data, endpoint)
     end
 
     # Retrieve all inventory records
     def self.all(data)
       endpoint = "#{Client.base_url}/inventory"
-      Client.post(data, endpoint)
+      Client.make_http_request(data, endpoint)
     end
 
     # Retrieve a single inventory record
     def self.retrieve(data)
       endpoint = "#{Client.base_url}/inventory/#{data['id']}"
-      Client.post(data, endpoint)
+      Client.make_http_request(data, endpoint)
     end
 
     # Update an inventory record
     def self.update(data)
       endpoint = "#{Client.base_url}/inventory/#{data['id']}/update"
-      Client.post(data, endpoint)
+      Client.make_http_request(data, endpoint)
     end
 
     # Delete an inventory record
     def self.delete(data)
       endpoint = "#{Client.base_url}/inventory/#{data['id']}/delete"
-      Client.post(data, endpoint)
+      Client.make_http_request(data, endpoint)
     end
   end
 end

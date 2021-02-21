@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                   = 'tuneuptechnology'
-  spec.version                = '1.0.0'
+  spec.version                = '1.2.0'
   spec.required_ruby_version  = '>= 2.4'
   spec.date                   = '2020-05-11'
   spec.summary                = 'The Ruby client library for the Tuneup Technology App.'
