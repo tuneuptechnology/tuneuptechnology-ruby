@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module TuneupTechnology
+  # The Locations object
   class Locations < Client
     attr_reader :base_url, :make_http_request
 

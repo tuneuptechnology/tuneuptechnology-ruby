@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 module TuneupTechnology
+  # The Inventory object
   class Inventory < Client
     attr_reader :base_url, :make_http_request
-    
+
     def initialize(base_url, make_http_request)
       @base_url = base_url
       @make_http_request = make_http_request

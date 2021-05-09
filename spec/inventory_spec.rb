@@ -8,17 +8,17 @@ require_relative '../lib/tuneuptechnology'
 RSpec.describe 'inventory' do
   it 'creates an inventory record' do
     VCR.use_cassette('inventory/create') do
-      client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
+      client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.create(
         {
-          'name': 'Inventory Item',
-          'inventory_type_id': 1,
-          'part_number': '1234',
-          'sku': '1234',
-          'notes': 'here are some notes',
-          'part_price': 19.99,
-          'location_id': 2,
-          'quantity': 1
+          name: 'Inventory Item',
+          inventory_type_id: 1,
+          part_number: '1234',
+          sku: '1234',
+          notes: 'here are some notes',
+          part_price: 19.99,
+          location_id: 2,
+          quantity: 1
         }
       )
 
@@ -28,7 +28,7 @@ RSpec.describe 'inventory' do
 
   it 'retrieves an inventory record' do
     VCR.use_cassette('inventory/retrieve') do
-      client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
+      client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.retrieve(ID)
 
       expect(response.code).to eq 200
@@ -37,8 +37,8 @@ RSpec.describe 'inventory' do
 
   it 'retrieves all inventory' do
     VCR.use_cassette('inventory/all') do
-      client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
-      response = client.inventory.all()
+      client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
+      response = client.inventory.all
 
       expect(response.code).to eq 200
     end
@@ -46,18 +46,18 @@ RSpec.describe 'inventory' do
 
   it 'updates an inventory record' do
     VCR.use_cassette('inventory/update') do
-      client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
+      client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.update(
-        id = ID,
-        data = {
-          'name': 'Inventory Item',
-          'inventory_type_id': 1,
-          'part_number': '1234',
-          'sku': '1234',
-          'notes': 'here are some notes',
-          'part_price': 19.99,
-          'location_id': 2,
-          'quantity': 1
+        ID,
+        {
+          name: 'Inventory Item',
+          inventory_type_id: 1,
+          part_number: '1234',
+          sku: '1234',
+          notes: 'here are some notes',
+          part_price: 19.99,
+          location_id: 2,
+          quantity: 1
         }
       )
 
@@ -67,7 +67,7 @@ RSpec.describe 'inventory' do
 
   it 'deletes an inventory record' do
     VCR.use_cassette('inventory/delete') do
-      client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
+      client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.delete(ID)
 
       expect(response.code).to eq 200

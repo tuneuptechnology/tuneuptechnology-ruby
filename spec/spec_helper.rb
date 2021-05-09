@@ -1,6 +1,11 @@
+# frozen_string_literal: true
+
 require 'vcr'
 require 'simplecov'
+require 'coveralls'
 
+Coveralls.wear!
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start
 
 API_EMAIL = ENV['API_EMAIL'] ||= 'mock@example.com'

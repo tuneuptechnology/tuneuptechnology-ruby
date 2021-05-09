@@ -4,6 +4,7 @@ require 'rest-client'
 require 'json'
 
 module TuneupTechnology
+  # The Client initializes everything needed to use this client library
   class Client
     attr_reader :email, :api_key, :base_url, :timeout, :version, :headers
 
@@ -14,25 +15,23 @@ module TuneupTechnology
       @timeout = timeout
       @version = '2.0.0'
 
-      if @@email.nil? or @@api_key.nil?
-        raise NameError.new 'email and api_key are required to create a Client.'
-      end
+      raise NameError, 'email and api_key are required to create a Client.' if @@email.nil? || @@api_key.nil?
     end
 
     def customers
-      TuneupTechnology::Customers.new @base_url, :make_http_request
+      TuneupTechnology::Customers.new(@base_url, :make_http_request)
     end
 
     def inventory
-      TuneupTechnology::Inventory.new @base_url, :make_http_request
+      TuneupTechnology::Inventory.new(@base_url, :make_http_request)
     end
 
     def locations
-      TuneupTechnology::Locations.new @base_url, :make_http_request
+      TuneupTechnology::Locations.new(@base_url, :make_http_request)
     end
 
     def tickets
-      TuneupTechnology::Tickets.new @base_url, :make_http_request
+      TuneupTechnology::Tickets.new(@base_url, :make_http_request)
     end
 
     # Build the HTTP client for the library

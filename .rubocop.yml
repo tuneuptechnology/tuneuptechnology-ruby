@@ -1,0 +1,18 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.6
+
+Style/NumericLiterals:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+# TODO: Eventually remove and correct ClassVars (pairs with inheritance)
+Style/ClassVars:
+  Enabled: false
+# TODO: Eventually remove and correct inheritance (pairs with ClassVars)
+Lint/MissingSuper:
+  Enabled: false
