@@ -18,14 +18,22 @@ jobs:
         run: rubocop
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: [2.6.x, 2.7.x, 3.0.x]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0"
+          ruby-version: ${{ matrix.ruby-version }}
       - name: Install dependencies
         run: bundle install
       - name: Run tests
         run: bundle exec rspec
+      - name: Coveralls
+        if: github.ref == 'refs/heads/main'
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

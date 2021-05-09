@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rest-client', '>= 2.1.0'
   spec.add_development_dependency 'rspec', '>= 3.10.0'
   spec.add_development_dependency 'rubocop', '>= 0.82.0'
-  spec.add_development_dependency 'simplecov', '~> 0.16.1' # Pinned due to coveralls requiring this version
+  spec.add_development_dependency 'simplecov', '>= 0.21.0'
+  spec.add_development_dependency 'simplecov-lcov', '>= 0.8.0'
   spec.add_development_dependency 'vcr', '>= 6.0.0'
   spec.add_development_dependency 'webmock', '>= 3.12.0'
-  spec.add_development_dependency 'coveralls', '>= 0.8.22'
 end

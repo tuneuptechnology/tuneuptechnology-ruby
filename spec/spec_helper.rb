@@ -2,10 +2,9 @@
 
 require 'vcr'
 require 'simplecov'
-require 'coveralls'
+require 'simplecov-lcov'
 
-Coveralls.wear!
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.formatter = SimpleCov::Formatter::LcovFormatter
 SimpleCov.start
 
 API_EMAIL = ENV['API_EMAIL'] ||= 'mock@example.com'
