@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://tuneapp.localhost/api/inventory
+    body:
+      encoding: UTF-8
+      string: '{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":19.99,"location_id":2,"quantity":1}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '159'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 22:55:17 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '54'
+      Content-Length:
+      - '289'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":19.99,"location_id":2,"quantity":1,"updated_at":"2021-05-08
+        22:55:17","created_at":"2021-05-08 22:55:17","id":6},"message":"Inventory
+        created successfully."}'
+  recorded_at: Sat, 08 May 2021 22:55:17 GMT
+recorded_with: VCR 6.0.0

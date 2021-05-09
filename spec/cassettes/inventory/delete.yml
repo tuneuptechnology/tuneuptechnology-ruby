@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://tuneapp.localhost/api/inventory/1
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 22:55:17 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '50'
+      Content-Length:
+      - '328'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":1,"name":"Inventory Item","quantity":"1","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:17","deleted_at":"2021-05-08 22:55:17","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":"19.99","location_id":2},"message":"Inventory
+        deleted successfully."}'
+  recorded_at: Sat, 08 May 2021 22:55:17 GMT
+recorded_with: VCR 6.0.0

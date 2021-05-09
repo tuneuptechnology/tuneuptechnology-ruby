@@ -2,12 +2,8 @@
 
 require 'tuneuptechnology'
 
-data = {
-  'auth' => ENV['API_EMAIL'],
-  'api_key' => ENV['API_KEY'],
-  'id' => 1 # the ID of the customer you are deleting
-}
+client = TuneupTechnology::Client.new ENV['API_EMAIL'], ENV['API_KEY']
 
-customer = TuneupTechnology::Customer.retrieve(data)
+customer = client.customers.retrieve(23)
 
 puts customer

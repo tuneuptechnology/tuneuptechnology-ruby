@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: http://tuneapp.localhost/api/locations/1
+    body:
+      encoding: UTF-8
+      string: '{"name":"Location Name","street":"123 California Ave","city":"Salt
+        Lake","state":"UT","zip":84043}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '98'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 23:05:00 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      Content-Length:
+      - '245'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt
+        Lake","state":"UT","zip":84043,"created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
+        23:05:00","deleted_at":null},"message":"Location updated successfully."}'
+  recorded_at: Sat, 08 May 2021 23:05:00 GMT
+recorded_with: VCR 6.0.0

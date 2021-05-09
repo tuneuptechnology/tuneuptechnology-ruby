@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://tuneapp.localhost/api/tickets/1
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 23:26:26 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Content-Length:
+      - '334'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":1,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here
+        are some notes","title":"Fancy Title","status":1,"created_at":"2021-05-08
+        23:16:18","updated_at":"2021-05-08 23:26:26","deleted_at":"2021-05-08 23:26:26","device":"2","imei":"10000","location_id":2},"message":"Ticket
+        deleted successfully."}'
+  recorded_at: Sat, 08 May 2021 23:26:26 GMT
+recorded_with: VCR 6.0.0

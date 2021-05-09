@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/tickets/1
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 23:16:31 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Content-Length:
+      - '385'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"780803","user_id":1,"notes":"Alias
+        recusandae non ipsa.","title":"Aut repellat corporis voluptatem nostrum architecto
+        eveniet.","status":1,"created_at":"2021-05-08 23:16:18","updated_at":"2021-05-08
+        23:16:18","deleted_at":null,"device":"iPhone 12","imei":"863596","location_id":1},"message":"Ticket
+        retrieved successfully."}'
+  recorded_at: Sat, 08 May 2021 23:16:31 GMT
+recorded_with: VCR 6.0.0

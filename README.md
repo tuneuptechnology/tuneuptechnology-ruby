@@ -10,7 +10,11 @@ This library allows you to interact with the customers, tickets, inventory, and 
 ## Install
 
 ```bash
+# Install the client library
 gem install tuneuptechnology
+
+# Install locally
+bundle install
 ```
 
 ## Example
@@ -18,19 +22,19 @@ gem install tuneuptechnology
 ```ruby
 require 'tuneuptechnology'
 
-data = {
-    'auth' => ENV['API_EMAIL'],
-    'api_key' => ENV['API_KEY'],
+client = TuneupTechnology::Client.new ENV['API_EMAIL'], ENV['API_KEY']
+
+customer = client.customers.create(
+  {
     'firstname' => 'Jake',
     'lastname' => 'Peralta',
     'email' => 'jake@example.com',
     'phone' => '8015551234',
     'user_id' => 1,
     'notes' => 'Believes he is a good detective.',
-    'location_id' => 1,
-}
-
-customer = TuneupTechnology::Customer.create(data)
+    'location_id' => 2
+  }
+)
 
 puts customer
 ```
@@ -40,12 +44,22 @@ Other examples can be found in the `/examples` directory. Alter according to you
 ## Usage
 
 ```bash
-AUTH=email@example.com API_KEY=123... ruby create_customer.rb
+API_EMAIL=email@example.com API_KEY=123... ruby create_customer.rb
 ```
 
 ## Documentation
 
 Up-to-date API documentation can be [found here](https://app.tuneuptechnology.com/docs/api).
+
+## Development
+
+```bash
+# Lint project
+rubocop
+
+# Run tests
+bundle exec rspec
+```
 
 ## Releasing
 

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/locations
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 23:05:00 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      Content-Length:
+      - '1586'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"current_page":1,"data":[{"id":1,"name":"Windler-Weber","street":"353
+        Hammes Ways Apt. 698","city":"New Casey","state":"MN","zip":"7789","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null},{"id":2,"name":"Lakin
+        Inc","street":"651 Friesen Expressway Apt. 978","city":"Pagacmouth","state":"NV","zip":"81796","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null},{"id":3,"name":"Wolff,
+        Thiel and Grimes","street":"5782 Roberts Walks","city":"Buckridgeshire","state":"SC","zip":"82865","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null},{"id":4,"name":"Schoen
+        Ltd","street":"982 Heathcote Dam","city":"Croninburgh","state":"AR","zip":"51746","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null},{"id":5,"name":"Hodkiewicz,
+        Veum and Carroll","street":"8200 Caleigh Glens","city":"Kielville","state":"WI","zip":"61463","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null},{"id":6,"name":"Location
+        Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-08
+        23:05:00","updated_at":"2021-05-08 23:05:00","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Locations
+        retrieved successfully."}'
+  recorded_at: Sat, 08 May 2021 23:05:00 GMT
+recorded_with: VCR 6.0.0

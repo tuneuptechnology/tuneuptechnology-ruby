@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/tickets
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 23:16:31 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"current_page":1,"data":[{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"780803","user_id":1,"notes":"Alias
+        recusandae non ipsa.","title":"Aut repellat corporis voluptatem nostrum architecto
+        eveniet.","status":1,"created_at":"2021-05-08 23:16:18","updated_at":"2021-05-08
+        23:16:18","deleted_at":null,"device":"iPhone 12","imei":"863596","location_id":1},{"id":2,"customer_id":1,"ticket_type_id":1,"serial":"639171","user_id":1,"notes":"Quia
+        qui consequatur odio.","title":"Nihil accusamus aut aperiam.","status":1,"created_at":"2021-05-08
+        23:16:18","updated_at":"2021-05-08 23:16:18","deleted_at":null,"device":"iPhone
+        12","imei":"513822","location_id":1},{"id":3,"customer_id":1,"ticket_type_id":1,"serial":"39215","user_id":1,"notes":"Labore
+        voluptas illo doloribus cum.","title":"Officiis repellat qui adipisci est
+        dolorem optio modi.","status":1,"created_at":"2021-05-08 23:16:18","updated_at":"2021-05-08
+        23:16:18","deleted_at":null,"device":"iPhone 12","imei":"751960","location_id":1},{"id":4,"customer_id":1,"ticket_type_id":1,"serial":"283947","user_id":1,"notes":"Blanditiis
+        nulla et cumque dolorem ex.","title":"Assumenda deserunt earum in ut quaerat
+        molestias odit.","status":1,"created_at":"2021-05-08 23:16:18","updated_at":"2021-05-08
+        23:16:18","deleted_at":null,"device":"iPhone 12","imei":"460633","location_id":1},{"id":5,"customer_id":1,"ticket_type_id":1,"serial":"542535","user_id":1,"notes":"Omnis
+        perferendis hic aspernatur voluptatem facilis.","title":"Debitis eos tenetur
+        delectus rerum.","status":1,"created_at":"2021-05-08 23:16:18","updated_at":"2021-05-08
+        23:16:18","deleted_at":null,"device":"iPhone 12","imei":"396668","location_id":1},{"id":6,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here
+        are some notes","title":"Fancy Title","status":1,"created_at":"2021-05-08
+        23:16:30","updated_at":"2021-05-08 23:16:30","deleted_at":null,"device":"2","imei":"10000","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/tickets","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Tickets
+        retrieved successfully."}'
+  recorded_at: Sat, 08 May 2021 23:16:31 GMT
+recorded_with: VCR 6.0.0

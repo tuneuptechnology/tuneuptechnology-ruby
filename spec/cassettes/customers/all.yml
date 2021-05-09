@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/customers
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 22:55:16 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"current_page":1,"data":[{"id":1,"firstname":"Dr. Shanel Keeling","lastname":"Nestor
+        Stracke","email":"brosenbaum@example.com","phone":"8018981234","user_id":1,"notes":"Eaque
+        ut atque et tempore voluptas autem.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
+        22:55:05","deleted_at":null,"location_id":1},{"id":2,"firstname":"Betty Hills","lastname":"Dan
+        Thompson","email":"rhauck@example.net","phone":"8018981234","user_id":1,"notes":"Libero
+        ad aut quia dolorum ab.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
+        22:55:05","deleted_at":null,"location_id":1},{"id":3,"firstname":"Tina Eichmann","lastname":"Prof.
+        Tommie Reynolds","email":"jon93@example.net","phone":"8018981234","user_id":1,"notes":"Asperiores
+        ratione dolorum odit tempore sed error facere nemo.","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"location_id":1},{"id":4,"firstname":"Lucie
+        Predovic","lastname":"Israel Trantow III","email":"george47@example.com","phone":"8018981234","user_id":1,"notes":"Aut
+        sint dignissimos perferendis commodi iste nostrum.","created_at":"2021-05-08
+        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"location_id":1},{"id":5,"firstname":"Anthony
+        Satterfield MD","lastname":"Leatha Pfeffer DVM","email":"percival.ortiz@example.com","phone":"8018981234","user_id":1,"notes":"Quia
+        modi sed rem voluptas perspiciatis neque.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
+        22:55:05","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
+        he is a good detective.","created_at":"2021-05-08 22:55:16","updated_at":"2021-05-08
+        22:55:16","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Customers
+        retrieved successfully."}'
+  recorded_at: Sat, 08 May 2021 22:55:16 GMT
+recorded_with: VCR 6.0.0
