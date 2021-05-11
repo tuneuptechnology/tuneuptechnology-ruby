@@ -2,7 +2,7 @@
 
 require_relative 'tuneuptechnology'
 
-client = TuneupTechnology::Client.new ENV['API_EMAIL'], ENV['API_KEY']
+client = TuneupTechnology::Client.new(ENV['API_EMAIL'], ENV['API_KEY'])
 
 customer = client.customers.create(
   {
