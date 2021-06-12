@@ -32,7 +32,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 23:05:00 GMT
+      - Sat, 12 Jun 2021 00:46:22 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -40,13 +40,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '56'
+      - '48'
       Content-Length:
-      - '245'
+      - '193'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt
-        Lake","state":"UT","zip":84043,"created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
-        23:05:00","deleted_at":null},"message":"Location updated successfully."}'
-  recorded_at: Sat, 08 May 2021 23:05:00 GMT
+      string: '{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt
+        Lake","state":"UT","zip":84043,"created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:46:22","deleted_at":null}'
+  recorded_at: Sat, 12 Jun 2021 00:46:22 GMT
 recorded_with: VCR 6.0.0

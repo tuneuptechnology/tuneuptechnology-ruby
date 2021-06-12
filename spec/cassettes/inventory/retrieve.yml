@@ -31,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 22:55:17 GMT
+      - Sat, 12 Jun 2021 00:46:21 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -39,14 +39,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '53'
+      - '54'
       Content-Length:
-      - '318'
+      - '274'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":1,"name":"iusto","quantity":"4","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"320944","sku":"55703","notes":"Enim
-        eius optio tempore qui.","part_price":null,"location_id":1},"message":"Inventory
-        item retrieved successfully."}'
-  recorded_at: Sat, 08 May 2021 22:55:17 GMT
+      string: '{"id":1,"name":"debitis","quantity":"6","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"628743","sku":"329479","notes":"Quaerat
+        ea id facilis atque non sit ipsa.","part_price":null,"location_id":1}'
+  recorded_at: Sat, 12 Jun 2021 00:46:21 GMT
 recorded_with: VCR 6.0.0

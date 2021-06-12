@@ -14,9 +14,6 @@ This library allows you to interact with the customers, tickets, inventory, and 
 ```bash
 # Install the client library
 gem install tuneuptechnology
-
-# Install locally
-bundle install
 ```
 
 ## Example
@@ -56,6 +53,9 @@ Up-to-date API documentation can be [found here](https://app.tuneuptechnology.co
 ## Development
 
 ```bash
+# Install locally
+bundle install
+
 # Lint project
 rubocop
 

@@ -10,7 +10,6 @@ SimpleCov.start
 API_EMAIL = ENV['API_EMAIL'] ||= 'mock@example.com'
 API_KEY = ENV['API_KEY'] ||= '1234567890'
 BASE_URL = 'http://tuneapp.localhost/api'
-ID = 1
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'

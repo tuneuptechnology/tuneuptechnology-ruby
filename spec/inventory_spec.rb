@@ -16,22 +16,22 @@ RSpec.describe 'inventory' do
           part_number: '1234',
           sku: '1234',
           notes: 'here are some notes',
-          part_price: 19.99,
+          part_price: '19.99',
           location_id: 2,
           quantity: 1
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['name']).to eq 'Inventory Item'
     end
   end
 
   it 'retrieves an inventory record' do
     VCR.use_cassette('inventory/retrieve') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.inventory.retrieve(ID)
+      response = client.inventory.retrieve(1)
 
-      expect(response.code).to eq 200
+      expect(response['name']).not_to be nil
     end
   end
 
@@ -40,7 +40,7 @@ RSpec.describe 'inventory' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.all
 
-      expect(response.code).to eq 200
+      expect(response['data'].length()).to be > 1
     end
   end
 
@@ -48,29 +48,29 @@ RSpec.describe 'inventory' do
     VCR.use_cassette('inventory/update') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.update(
-        ID,
+        1,
         {
           name: 'Inventory Item',
           inventory_type_id: 1,
           part_number: '1234',
           sku: '1234',
           notes: 'here are some notes',
-          part_price: 19.99,
+          part_price: '19.99',
           location_id: 2,
           quantity: 1
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['name']).to eq 'Inventory Item'
     end
   end
 
   it 'deletes an inventory record' do
     VCR.use_cassette('inventory/delete') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.inventory.delete(ID)
+      response = client.inventory.delete(1)
 
-      expect(response.code).to eq 200
+      expect(response['deleted_at']).not_to be nil
     end
   end
 end

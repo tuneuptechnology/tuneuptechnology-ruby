@@ -21,16 +21,16 @@ RSpec.describe 'customers' do
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['firstname']).to eq 'Jake'
     end
   end
 
   it 'retrieves a customer' do
     VCR.use_cassette('customers/retrieve') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.customers.retrieve(ID)
+      response = client.customers.retrieve(1)
 
-      expect(response.code).to eq 200
+      expect(response['firstname']).not_to be nil
     end
   end
 
@@ -39,7 +39,7 @@ RSpec.describe 'customers' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.customers.all
 
-      expect(response.code).to eq 200
+      expect(response['data'].length()).to be > 1
     end
   end
 
@@ -47,7 +47,7 @@ RSpec.describe 'customers' do
     VCR.use_cassette('customers/update') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.customers.update(
-        ID,
+        1,
         {
           firstname: 'Jake',
           lastname: 'Peralta',
@@ -59,16 +59,16 @@ RSpec.describe 'customers' do
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['firstname']).to eq 'Jake'
     end
   end
 
   it 'deletes a customer' do
     VCR.use_cassette('customers/delete') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.customers.delete(ID)
+      response = client.customers.delete(1)
 
-      expect(response.code).to eq 200
+      expect(response['deleted_at']).not_to be nil
     end
   end
 end

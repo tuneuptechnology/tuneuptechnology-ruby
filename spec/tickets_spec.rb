@@ -18,22 +18,22 @@ RSpec.describe 'tickets' do
           notes: 'here are some notes',
           title: 'Fancy Title',
           status: 1,
-          device: '2',
+          device: 'iPhone',
           imei: 10000,
           location_id: 2
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['title']).to eq 'Fancy Title'
     end
   end
 
   it 'retrieves a ticket' do
     VCR.use_cassette('tickets/retrieve') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.tickets.retrieve(ID)
+      response = client.tickets.retrieve(1)
 
-      expect(response.code).to eq 200
+      expect(response['title']).not_to be nil
     end
   end
 
@@ -42,7 +42,7 @@ RSpec.describe 'tickets' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.tickets.all
 
-      expect(response.code).to eq 200
+      expect(response['data'].length()).to be > 1
     end
   end
 
@@ -50,7 +50,7 @@ RSpec.describe 'tickets' do
     VCR.use_cassette('tickets/update') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.tickets.update(
-        ID,
+        1,
         {
           customer_id: 2,
           ticket_type_id: 1,
@@ -59,22 +59,22 @@ RSpec.describe 'tickets' do
           notes: 'here are some notes',
           title: 'Fancy Title',
           status: 1,
-          device: '2',
+          device: 'iPhone',
           imei: 10_000,
           location_id: 2
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['title']).to eq 'Fancy Title'
     end
   end
 
   it 'deletes a ticket' do
     VCR.use_cassette('tickets/delete') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.tickets.delete(ID)
+      response = client.tickets.delete(1)
 
-      expect(response.code).to eq 200
+      expect(response['deleted_at']).not_to be nil
     end
   end
 end

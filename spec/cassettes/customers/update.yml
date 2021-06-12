@@ -32,7 +32,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 22:55:17 GMT
+      - Sat, 12 Jun 2021 00:46:21 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -42,11 +42,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '56'
       Content-Length:
-      - '307'
+      - '255'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":1,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
-        he is a good detective.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
-        22:55:17","deleted_at":null,"location_id":2},"message":"Customer updated successfully."}'
-  recorded_at: Sat, 08 May 2021 22:55:17 GMT
+      string: '{"id":1,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
+        he is a good detective.","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:46:21","deleted_at":null,"location_id":2}'
+  recorded_at: Sat, 12 Jun 2021 00:46:21 GMT
 recorded_with: VCR 6.0.0

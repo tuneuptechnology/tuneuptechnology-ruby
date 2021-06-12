@@ -44,13 +44,15 @@ module TuneupTechnology
       }
 
       begin
-        RestClient::Request.execute(
+        response = RestClient::Request.execute(
           method: method,
           url: endpoint,
           payload: data.to_json,
           headers: headers,
           timeout: @timeout
         )
+        
+        JSON.parse(response.body)
       rescue RestClient::ExceptionWithResponse => e
         e.response
       end

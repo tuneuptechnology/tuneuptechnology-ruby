@@ -19,16 +19,16 @@ RSpec.describe 'locations' do
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['name']).to eq 'Location Name'
     end
   end
 
   it 'retrieves a location' do
     VCR.use_cassette('locations/retrieve') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.locations.retrieve(ID)
+      response = client.locations.retrieve(1)
 
-      expect(response.code).to eq 200
+      expect(response['name']).not_to be nil
     end
   end
 
@@ -37,7 +37,7 @@ RSpec.describe 'locations' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.locations.all
 
-      expect(response.code).to eq 200
+      expect(response['data'].length()).to be > 1
     end
   end
 
@@ -45,7 +45,7 @@ RSpec.describe 'locations' do
     VCR.use_cassette('locations/update') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.locations.update(
-        ID,
+        1,
         {
           name: 'Location Name',
           street: '123 California Ave',
@@ -55,16 +55,16 @@ RSpec.describe 'locations' do
         }
       )
 
-      expect(response.code).to eq 200
+      expect(response['name']).to eq 'Location Name'
     end
   end
 
   it 'deletes a location' do
     VCR.use_cassette('locations/delete') do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
-      response = client.locations.delete(ID)
+      response = client.locations.delete(1)
 
-      expect(response.code).to eq 200
+      expect(response['deleted_at']).not_to be nil
     end
   end
 end

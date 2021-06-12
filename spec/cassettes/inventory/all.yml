@@ -31,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 22:55:17 GMT
+      - Sat, 12 Jun 2021 00:46:21 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -39,25 +39,24 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '52'
+      - '53'
       Content-Length:
-      - '2026'
+      - '1999'
     body:
       encoding: UTF-8
-      string: '{"data":{"current_page":1,"data":[{"id":1,"name":"iusto","quantity":"4","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"320944","sku":"55703","notes":"Enim
-        eius optio tempore qui.","part_price":null,"location_id":1},{"id":2,"name":"non","quantity":"4","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"451195","sku":"842303","notes":"Dolor
-        aut deleniti est quo dolore beatae possimus et.","part_price":null,"location_id":1},{"id":3,"name":"et","quantity":"6","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"88716","sku":"507363","notes":"Quaerat
-        molestiae asperiores sequi id cum asperiores qui.","part_price":null,"location_id":1},{"id":4,"name":"cum","quantity":"8","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"475359","sku":"734038","notes":"Libero
-        corrupti molestias maiores consequatur accusantium qui autem.","part_price":null,"location_id":1},{"id":5,"name":"quia","quantity":"8","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"inventory_type_id":1,"part_number":"339099","sku":"451934","notes":"Est
-        officiis rerum hic culpa maxime dolorum.","part_price":null,"location_id":1},{"id":6,"name":"Inventory
-        Item","quantity":"1","created_at":"2021-05-08 22:55:17","updated_at":"2021-05-08
-        22:55:17","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
-        are some notes","part_price":"19.99","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Inventory
-        retrieved successfully."}'
-  recorded_at: Sat, 08 May 2021 22:55:17 GMT
+      string: '{"current_page":1,"data":[{"id":1,"name":"debitis","quantity":"6","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"628743","sku":"329479","notes":"Quaerat
+        ea id facilis atque non sit ipsa.","part_price":null,"location_id":1},{"id":2,"name":"suscipit","quantity":"5","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"54997","sku":"612944","notes":"Consequatur
+        dolor doloribus tempora voluptatem deserunt labore harum maiores.","part_price":null,"location_id":1},{"id":3,"name":"velit","quantity":"7","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"455748","sku":"607427","notes":"Nulla
+        repellat voluptatum est illum quidem quod eos mollitia.","part_price":null,"location_id":1},{"id":4,"name":"laboriosam","quantity":"2","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"905445","sku":"810727","notes":"Natus
+        ut vero nihil perspiciatis quibusdam porro excepturi.","part_price":null,"location_id":1},{"id":5,"name":"ea","quantity":"6","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"inventory_type_id":1,"part_number":"828998","sku":"400975","notes":"Quos
+        aut iure veritatis.","part_price":null,"location_id":1},{"id":6,"name":"Inventory
+        Item","quantity":"1","created_at":"2021-06-12 00:46:21","updated_at":"2021-06-12
+        00:46:21","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":"19.99","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6}'
+  recorded_at: Sat, 12 Jun 2021 00:46:21 GMT
 recorded_with: VCR 6.0.0

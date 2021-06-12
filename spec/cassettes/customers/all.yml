@@ -31,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 22:55:16 GMT
+      - Sat, 12 Jun 2021 00:46:21 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -40,28 +40,27 @@ http_interactions:
       - '60'
       X-Ratelimit-Remaining:
       - '57'
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '2034'
     body:
       encoding: UTF-8
-      string: '{"data":{"current_page":1,"data":[{"id":1,"firstname":"Dr. Shanel Keeling","lastname":"Nestor
-        Stracke","email":"brosenbaum@example.com","phone":"8018981234","user_id":1,"notes":"Eaque
-        ut atque et tempore voluptas autem.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
-        22:55:05","deleted_at":null,"location_id":1},{"id":2,"firstname":"Betty Hills","lastname":"Dan
-        Thompson","email":"rhauck@example.net","phone":"8018981234","user_id":1,"notes":"Libero
-        ad aut quia dolorum ab.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
-        22:55:05","deleted_at":null,"location_id":1},{"id":3,"firstname":"Tina Eichmann","lastname":"Prof.
-        Tommie Reynolds","email":"jon93@example.net","phone":"8018981234","user_id":1,"notes":"Asperiores
-        ratione dolorum odit tempore sed error facere nemo.","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"location_id":1},{"id":4,"firstname":"Lucie
-        Predovic","lastname":"Israel Trantow III","email":"george47@example.com","phone":"8018981234","user_id":1,"notes":"Aut
-        sint dignissimos perferendis commodi iste nostrum.","created_at":"2021-05-08
-        22:55:05","updated_at":"2021-05-08 22:55:05","deleted_at":null,"location_id":1},{"id":5,"firstname":"Anthony
-        Satterfield MD","lastname":"Leatha Pfeffer DVM","email":"percival.ortiz@example.com","phone":"8018981234","user_id":1,"notes":"Quia
-        modi sed rem voluptas perspiciatis neque.","created_at":"2021-05-08 22:55:05","updated_at":"2021-05-08
-        22:55:05","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
-        he is a good detective.","created_at":"2021-05-08 22:55:16","updated_at":"2021-05-08
-        22:55:16","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Customers
-        retrieved successfully."}'
-  recorded_at: Sat, 08 May 2021 22:55:16 GMT
+      string: '{"current_page":1,"data":[{"id":1,"firstname":"Khalil Carter","lastname":"Miss
+        America Hills","email":"willard24@example.org","phone":"8018981234","user_id":1,"notes":"Id
+        autem porro expedita harum corporis.","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"location_id":1},{"id":2,"firstname":"Shaina Auer","lastname":"Elta
+        Sawayn DDS","email":"iwillms@example.com","phone":"8018981234","user_id":1,"notes":"Laboriosam
+        repellat veritatis nam voluptate rerum voluptas consequatur.","created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"location_id":1},{"id":3,"firstname":"Ari
+        Wiegand","lastname":"Emelie Rempel","email":"cormier.lottie@example.com","phone":"8018981234","user_id":1,"notes":"Autem
+        tempora quia eos reprehenderit illum eum.","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"location_id":1},{"id":4,"firstname":"Adonis Carter
+        Jr.","lastname":"Ayla Davis","email":"kitty.lubowitz@example.org","phone":"8018981234","user_id":1,"notes":"Quia
+        eum voluptas est iusto.","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"location_id":1},{"id":5,"firstname":"Anjali Turcotte","lastname":"Horacio
+        Williamson V","email":"anderson09@example.org","phone":"8018981234","user_id":1,"notes":"Perferendis
+        reprehenderit sit illo sed.","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
+        he is a good detective.","created_at":"2021-06-12 00:46:21","updated_at":"2021-06-12
+        00:46:21","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6}'
+  recorded_at: Sat, 12 Jun 2021 00:46:21 GMT
 recorded_with: VCR 6.0.0

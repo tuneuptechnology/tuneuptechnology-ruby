@@ -16,11 +16,11 @@ Gem::Specification.new do |spec|
   spec.files                  = Dir.glob('{bin,lib}/**/*')
   spec.homepage               = 'https://github.com/tuneuptechnology/tuneuptechnology-ruby'
   spec.license                = 'MIT'
-  spec.add_dependency 'rest-client', '>= 2.1.0'
-  spec.add_development_dependency 'rspec', '>= 3.10.0'
-  spec.add_development_dependency 'rubocop', '>= 0.82.0'
-  spec.add_development_dependency 'simplecov', '>= 0.21.0'
-  spec.add_development_dependency 'simplecov-lcov', '>= 0.8.0'
-  spec.add_development_dependency 'vcr', '>= 6.0.0'
-  spec.add_development_dependency 'webmock', '>= 3.12.0'
+  spec.add_dependency 'rest-client', '~> 2'
+  spec.add_development_dependency 'rspec', '~> 3'
+  spec.add_development_dependency 'rubocop', '~> 0.82'
+  spec.add_development_dependency 'simplecov', '~> 0.21'
+  spec.add_development_dependency 'simplecov-lcov', '~> 0.8'
+  spec.add_development_dependency 'vcr', '~> 6'
+  spec.add_development_dependency 'webmock', '~> 3'
 end

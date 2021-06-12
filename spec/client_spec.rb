@@ -13,7 +13,7 @@ RSpec.describe 'client' do
     allow(RestClient::Request).to receive(:execute).and_raise(RestClient::ExceptionWithResponse)
 
     client = TuneupTechnology::Client.new API_EMAIL, API_KEY, BASE_URL
-    client.locations.retrieve(ID)
+    client.locations.retrieve(1)
     expect { RestClient::Request.execute }.to raise_error(RestClient::ExceptionWithResponse)
   end
 end
