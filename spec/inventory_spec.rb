@@ -40,7 +40,7 @@ RSpec.describe 'inventory' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.inventory.all
 
-      expect(response['data'].length()).to be > 1
+      expect(response['data'].length).to be > 1
     end
   end
 

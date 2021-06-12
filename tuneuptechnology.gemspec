@@ -4,7 +4,6 @@ Gem::Specification.new do |spec|
   spec.name                   = 'tuneuptechnology'
   spec.version                = '2.0.0'
   spec.required_ruby_version  = '>= 2.6'
-  spec.date                   = '2020-05-11'
   spec.summary                = 'The Ruby client library for the Tuneup Technology App.'
   spec.description            = 'This library allows you to interact with the customers,
     tickets, inventory, and locations objects without needing to do the hard

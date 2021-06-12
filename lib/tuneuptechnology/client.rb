@@ -51,7 +51,7 @@ module TuneupTechnology
           headers: headers,
           timeout: @timeout
         )
-        
+
         JSON.parse(response.body)
       rescue RestClient::ExceptionWithResponse => e
         e.response

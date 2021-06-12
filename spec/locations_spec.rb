@@ -37,7 +37,7 @@ RSpec.describe 'locations' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.locations.all
 
-      expect(response['data'].length()).to be > 1
+      expect(response['data'].length).to be > 1
     end
   end
 

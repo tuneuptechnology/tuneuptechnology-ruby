@@ -39,7 +39,7 @@ RSpec.describe 'customers' do
       client = TuneupTechnology::Client.new(API_EMAIL, API_KEY, BASE_URL)
       response = client.customers.all
 
-      expect(response['data'].length()).to be > 1
+      expect(response['data'].length).to be > 1
     end
   end
 
