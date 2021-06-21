@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v2.0.0 (2021-06-11)
+## v2.0.0 (2021-06-21)
 
 * Updates entire library to be compliant with the new `v2` API (endpoints, HTTP methods, etc)
 * Proper error handling by wrapping the RestClient request in begin/rescue
