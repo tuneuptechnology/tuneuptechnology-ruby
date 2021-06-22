@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/tickets
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:46:22 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '45'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"current_page":1,"data":[{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"943164","user_id":1,"notes":"Nihil
+        ut ut quasi et eos.","title":"Impedit et ad architecto quia quasi sed est
+        accusantium.","status":1,"created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"device":"iPhone 12","imei":"618114","location_id":1},{"id":2,"customer_id":1,"ticket_type_id":1,"serial":"544870","user_id":1,"notes":"Voluptatum
+        nihil aut sapiente et laudantium perferendis consectetur quisquam.","title":"Molestiae
+        excepturi perspiciatis velit aut aut.","status":1,"created_at":"2021-06-12
+        00:44:58","updated_at":"2021-06-12 00:44:58","deleted_at":null,"device":"iPhone
+        12","imei":"872838","location_id":1},{"id":3,"customer_id":1,"ticket_type_id":1,"serial":"402289","user_id":1,"notes":"Animi
+        est quo ea voluptates maiores.","title":"Enim est voluptatem incidunt expedita
+        repudiandae.","status":1,"created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"device":"iPhone 12","imei":"690717","location_id":1},{"id":4,"customer_id":1,"ticket_type_id":1,"serial":"855267","user_id":1,"notes":"Aliquid
+        velit ullam est consequuntur at quia aut.","title":"Sapiente est aut minima
+        dolor quidem quas nam.","status":1,"created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"device":"iPhone 12","imei":"507062","location_id":1},{"id":5,"customer_id":1,"ticket_type_id":1,"serial":"90272","user_id":1,"notes":"Adipisci
+        ut aut nemo sapiente tenetur alias.","title":"Odit laborum voluptas et omnis
+        quis dolores.","status":1,"created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null,"device":"iPhone 12","imei":"36564","location_id":1},{"id":6,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here
+        are some notes","title":"Fancy Title","status":1,"created_at":"2021-06-12
+        00:46:22","updated_at":"2021-06-12 00:46:22","deleted_at":null,"device":"iPhone","imei":"10000","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/tickets","per_page":20,"prev_page_url":null,"to":6,"total":6}'
+  recorded_at: Sat, 12 Jun 2021 00:46:22 GMT
+recorded_with: VCR 6.0.0

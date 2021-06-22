@@ -2,9 +2,8 @@
 
 Gem::Specification.new do |spec|
   spec.name                   = 'tuneuptechnology'
-  spec.version                = '1.2.0'
-  spec.required_ruby_version  = '>= 2.4'
-  spec.date                   = '2020-05-11'
+  spec.version                = '2.0.0'
+  spec.required_ruby_version  = '>= 2.6'
   spec.summary                = 'The Ruby client library for the Tuneup Technology App.'
   spec.description            = 'This library allows you to interact with the customers,
     tickets, inventory, and locations objects without needing to do the hard
@@ -16,6 +15,11 @@ Gem::Specification.new do |spec|
   spec.files                  = Dir.glob('{bin,lib}/**/*')
   spec.homepage               = 'https://github.com/tuneuptechnology/tuneuptechnology-ruby'
   spec.license                = 'MIT'
-  spec.add_dependency 'rest-client', '>= 2.1.0'
-  spec.add_development_dependency 'rubocop', '>= 0.82.0'
+  spec.add_dependency 'rest-client', '~> 2'
+  spec.add_development_dependency 'rspec', '~> 3'
+  spec.add_development_dependency 'rubocop', '~> 0.82'
+  spec.add_development_dependency 'simplecov', '~> 0.21'
+  spec.add_development_dependency 'simplecov-lcov', '~> 0.8'
+  spec.add_development_dependency 'vcr', '~> 6'
+  spec.add_development_dependency 'webmock', '~> 3'
 end

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://tuneapp.localhost/api/locations/1
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/RubyClient/
+      Email:
+      - "<API_EMAIL>"
+      Api-Key:
+      - "<API_KEY>"
+      Content-Length:
+      - '4'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - tuneapp.localhost
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:46:22 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '50'
+      Content-Length:
+      - '196'
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"name":"Rippin-Labadie","street":"778 Schroeder Fords","city":"West
+        Leif","state":"ID","zip":"5408","created_at":"2021-06-12 00:44:58","updated_at":"2021-06-12
+        00:44:58","deleted_at":null}'
+  recorded_at: Sat, 12 Jun 2021 00:46:22 GMT
+recorded_with: VCR 6.0.0

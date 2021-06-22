@@ -2,11 +2,8 @@
 
 require 'tuneuptechnology'
 
-data = {
-  'auth' => ENV['API_EMAIL'],
-  'api_key' => ENV['API_KEY']
-}
+client = TuneupTechnology::Client.new(ENV['API_EMAIL'], ENV['API_KEY'])
 
-customers = TuneupTechnology::Customer.all(data)
+customers = client.customers.all
 
 puts customers
