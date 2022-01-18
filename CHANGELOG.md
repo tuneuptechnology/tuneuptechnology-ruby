@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## NEXT RELEASE
+
+* Bump dependencies
+
 ## v2.0.0 (2021-06-21)
 
 * Updates entire library to be compliant with the new `v2` API (endpoints, HTTP methods, etc)

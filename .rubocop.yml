@@ -1,7 +1,6 @@
 AllCops:
-  NewCops: enable
+  NewCops: disable
   TargetRubyVersion: 2.6
-
 Style/NumericLiterals:
   Enabled: false
 Metrics/BlockLength:
