@@ -4,15 +4,20 @@ require 'vcr'
 require 'simplecov'
 require 'simplecov-lcov'
 
+SimpleCov::Formatter::LcovFormatter.config do |config|
+  config.report_with_single_file = true
+end
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
+  [
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::LcovFormatter
+  ]
+)
+
 SimpleCov.start do
   track_files 'lib/**/*.rb'
   enable_coverage :branch
-
-  SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::HTMLFormatter,
-    SimpleCov::Formatter::LcovFormatter
-  ])
-  SimpleCov::Formatter::LcovFormatter.config.report_with_single_file = true
 end
 
 API_EMAIL = ENV['API_EMAIL'] ||= 'mock@example.com'
