@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require 'rubygems'
 require 'vcr'
-require_relative 'spec_helper'
 require_relative '../lib/tuneuptechnology'
+require_relative 'spec_helper'
 
 RSpec.describe 'locations' do
   it 'creates a location' do
