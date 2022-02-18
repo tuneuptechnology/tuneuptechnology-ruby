@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper'
-require_relative '../lib/tuneuptechnology'
+require 'spec_helper'
+require 'tuneuptechnology'
 
 RSpec.describe 'client' do
   it 'raises an error when no email or api_key is passed' do

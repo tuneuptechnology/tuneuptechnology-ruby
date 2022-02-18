@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'vcr'
+# Simplecov must come before everything else to work properly
 require 'simplecov'
 require 'simplecov-lcov'
 
@@ -17,8 +17,11 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
 
 SimpleCov.start do
   track_files 'lib/**/*.rb'
+  add_filter '/spec/'
   enable_coverage :branch
 end
+
+require 'vcr'
 
 API_EMAIL = ENV['API_EMAIL'] ||= 'mock@example.com'
 API_KEY = ENV['API_KEY'] ||= '1234567890'
