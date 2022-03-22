@@ -14,7 +14,7 @@ inventory = client.inventory.update(
     notes: 'here are some notes',
     part_price: 19.99,
     location_id: 1,
-    quantity: 1,
+    quantity: 1
   }
 )
 

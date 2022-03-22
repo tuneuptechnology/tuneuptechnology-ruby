@@ -15,7 +15,7 @@ ticket = client.tickets.create(
     status: 1,
     device: '2',
     imei: 10000,
-    location_id: 1,
+    location_id: 1
   }
 )
 
