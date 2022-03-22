@@ -11,7 +11,7 @@ location = client.locations.update(
     street: '123 California Ave',
     city: 'Salt Lake',
     state: 'UT',
-    zip: '84043'
+    zip: 84043
   }
 )
 
