@@ -5,6 +5,7 @@ require 'tuneuptechnology'
 client = TuneupTechnology::Client.new(ENV['API_EMAIL'], ENV['API_KEY'])
 
 customer = client.customers.update(
+  23,
   {
     firstname: 'Jake',
     lastname: 'Peralta',
